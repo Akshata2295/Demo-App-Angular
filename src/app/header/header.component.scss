@@ -1,0 +1,36 @@
+.main-header {
+	background: deepskyblue;
+	.container {
+		.logo a {
+		font-size: 20px;
+		color: white;	
+		}
+		width: 1200px;
+		max-width: 100%;
+		padding: 20px;
+		margin: 0 auto;
+		display: flex;
+		align-items: right;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.main-nav  {
+			ul {
+				margin: 1em 0 .5em;
+				text-align: center;
+				li {
+				
+					display: inline;
+					a {
+						color:#fff;
+						font-weight: 500;
+						display: inline-block;
+						padding: .5em 1.5em;
+					    cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+

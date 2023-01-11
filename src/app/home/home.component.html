@@ -1,0 +1,79 @@
+<section class="header-wrapper">
+  <div class="wrapper">
+    <swiper [config]="config">
+        <div class="swiper-slide" *ngFor="let item of slideImages">
+            <a [style.backgroundImage]="'url('+item.name+')'">
+                <div class="content-wrapper">
+                    <div class="details">
+                        <h3>I'm looking for..</h3>
+                        <div class="top">
+                            <input placeholder="Enter a Job Description">
+                            <button class="button"><i class="fa fa-search"></i> Search</button>
+                        </div>
+                        <div class="bottom">
+                            <div class="type">
+                            <input type="checkbox" name="fulltime" > Full Time
+                            <input type="checkbox" name="partcasual" value="Bike"> Part Time / Casual / Freelance
+                            </div>
+                            <select name="slct" id="slct">
+                                <option >Select your Location</option>
+                                <option value="1">Mumbai</option>
+                                <option value="2">Hyderabadh</option>
+                                <option value="3">Pune</option>
+                                <option value="4">Banglore</option>
+                                <option value="5">Chennai</option>
+                                <option value="6">Kolata</option>
+                                <option value="7">Delhi</option>
+                                <option value="8">Bhopal</option>
+                                <option value="9">Mysore</option>
+                            </select>
+                        </div>
+                      <div class="register">
+                        <button class="button" (click)="onRegisterClick()"> Register </button>
+                      </div>
+                       </div>
+                </div>
+            </a>
+        </div>
+       </swiper>
+  </div>
+   
+   <span class="break"></span>
+</section>
+
+   <section class="intro">
+    <div class="container">
+    <div class="middle">
+      <div class="row">
+        <div class="col">
+          <div class="row ">
+            <div class="col  title-wrapper ">
+                <span></span>
+              <h2 class="text-center mb-20">We're leaders in</h2>
+              <h1 class="text-center mb-20">Creative Digital Recruitment</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col  desc-wrapper ">
+              <p class="text-center mb-20">
+                Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity and that reflects on the type of jobs we
+                recruit for.
+              </p>
+              <div class="row mb-50">
+                <div class="center">
+                  <button class="btn btn-outline-info">Find out more about us</button>
+                </div>
+              </div>
+              <br/><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+   <span class="break"></span>
+
+    
+   
+   
